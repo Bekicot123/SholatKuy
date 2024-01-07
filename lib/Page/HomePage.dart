@@ -25,94 +25,135 @@ class HomePage extends StatelessWidget{
               height: 5,
             ),
             Card(
-              margin: const EdgeInsets.all(20.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Masjid()));
-                },
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: <Widget>[
-                    Text(
-                      "Cari Masjid",
-                      style: TextStyle(
-                          fontSize: 15, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset(
-                      'lib/Image/mosque.png',width: 120,height: 80,
-                    ),
-                  ],
-                ),
-              ),
-            ),
+              margin: const EdgeInsets.only(top:8,bottom: 20,left:8,right:8),
+              child: Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Masjid()));
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        SizedBox(
+                          height: 35,
+                        ),
+                        Text(
+                          "   Cari Masjid",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                        Text("    Infokan Masjid Terdekat      ", style: TextStyle(fontSize: 15),),
+                        SizedBox(
+                          height: 35,
+                        ),
 
-            Card(
-              margin: const EdgeInsets.all(20.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Kiblat()));
-                },
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    Text(
-                      "kiblat",
-                      style: TextStyle(
-                          fontSize: 15, fontWeight: FontWeight.bold),
+                      ],
                     ),
-                    SizedBox(
-                      height: 10,
+                  ),SizedBox(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Image.asset('lib/Image/mosque.png',width: 120,height: 80,),
+                      ],
                     ),
-                    Image.asset(
-                      'lib/Image/qibla.png',width: 120,height: 80,
-                    ),
-                  ],
-                ),
+                  )
+                ],
               ),
             ),
             Card(
-              margin: const EdgeInsets.all(20.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Masjid()));
-                },
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    Text(
-                      "Tuntunan Sholat",
-                      style: TextStyle(
-                          fontSize: 15, fontWeight: FontWeight.bold),
-                    ),ClipRRect(borderRadius: BorderRadius.vertical(),),
-                    SizedBox(
-                      height: 10,
+              margin: const EdgeInsets.only(top:8,bottom: 20,left:8,right:8),
+              child: Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>  Kiblat()));
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        SizedBox(
+                          height: 35,
+                        ),
+                        Text(
+                          "   Kiblat",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                        Text("    Cari Arah Kiblat                     ", style: TextStyle(fontSize: 15),),
+                        SizedBox(
+                          height: 35,
+                        ),
+
+                      ],
                     ),
-                    Image.asset(
-                      'lib/Image/praying.png',width: 120,height: 80,
+                  ),SizedBox(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Image.asset('lib/Image/qibla.png',width: 120,height: 80,),
+                      ],
                     ),
-                  ],
-                ),
+                  )
+                ],
               ),
             ),
             Card(
-                margin: const EdgeInsets.only(top:8,bottom: 20,left:8,right:8),
-                clipBehavior: Clip.antiAlias,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
-                ),
-            )
+              margin: const EdgeInsets.only(top:8,bottom: 20,left:8,right:8),
+              child: Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Masjid()));
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        SizedBox(
+                          height: 35,
+                        ),
+                        Text(
+                          "   Tuntunan Sholat",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                        Text("    Jagalah Sholat anda dengan baik", style: TextStyle(fontSize: 13),),
+                        SizedBox(
+                          height: 35,
+                        ),
+
+                      ],
+                    ),
+                  ),SizedBox(
+
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Image.asset('lib/Image/praying.png',width: 100,height: 70,),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
         ),
