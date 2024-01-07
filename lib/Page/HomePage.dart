@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget{
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) =>  Kiblat()));
+                              builder: (context) =>  Masjid()));
                     },
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
