@@ -20,7 +20,16 @@ class Masjid extends StatelessWidget{
           SizedBox(
             height: 16,
           ),
-
+          Card(
+            margin: const EdgeInsets.only(top:8,bottom: 20,left:8,right:8),
+            clipBehavior: Clip.antiAlias,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(14),
+            ),
+            child: Row(children: <Widget>[
+              SizedBox()
+            ],),
+          )
         ],
       ),
     );
