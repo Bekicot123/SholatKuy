@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sholatkuy/Page/Masjid.dart';
 import 'package:sholatkuy/Page/Kiblat.dart';
+import 'package:sholatkuy/Page/TuntunanSholat.dart';
 
 class HomePage extends StatelessWidget{
   const HomePage({super.key});
@@ -119,7 +120,7 @@ class HomePage extends StatelessWidget{
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Masjid()));
+                              builder: (context) => Tuntunan()));
                     },
                     child: Column(
                       mainAxisSize: MainAxisSize.max,

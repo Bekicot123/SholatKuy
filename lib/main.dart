@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sholatkuy/Page/HomePage.dart';
+import 'package:sholatkuy/Page/TuntunanSholat.dart';
 
 void main(){
   runApp(const MyApp());
