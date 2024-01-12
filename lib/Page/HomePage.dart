@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget{
         child: Column(
           children: [
 
-            Image.asset("lib/Image/latar.png"),
+            Image.asset("lib/Image/masjid.png"),
             SizedBox(
               height: 16,
             ),
@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget{
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) =>  Masjid()));
+                              builder: (context) =>  MyApp()));
                     },
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
