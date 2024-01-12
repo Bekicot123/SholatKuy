@@ -32,7 +32,7 @@ final bool _customIcon = false;
               children: <Widget>[
                 ListTile(
                   title: Text("أُصَلِّى فَرْضَ الصُّبْح رَكَعتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى \n"
-                      "\nUsholli fardhossubhi rok'ataini mustaqbilal-qiblati adaa-an (ma'muman/imaman) lillahi ta'ala\n"),
+                      "\nUsholli fardhossubhi rok'ataini mustaqbilal-qiblati adaa-an (ma'muman/imaman) lillahi ta'ala.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -43,7 +43,8 @@ final bool _customIcon = false;
             ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Dzuhur',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
-                  title: Text("Usholli fardhol zuhri arba'a roka'aati mustaqbilal qiblati adaa an (sholat sendiri)/Ma'muuman (menjadi ma'mum)/Imaaman (menjadi imam) Lillaahi Ta'aalaa."),
+                  title: Text("اُصَلِّيْ فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى\n "
+                      "\nUsholli fardhol zuhri arba'a roka'aati mustaqbilal qiblati adaa an (sholat sendiri)/Ma'muuman (menjadi ma'mum)/Imaaman (menjadi imam) Lillaahi Ta'aalaa.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -53,7 +54,8 @@ final bool _customIcon = false;
             ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Ashar',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
-                  title: Text("Usholli fardhol ashri arba'a roka'aati mustaqbilal qiblati adaa an (sholat sendiri)/Ma'muuman (menjadi ma'mum)/Imaaman (menjadi imam) Lillaahi Ta'ala"),
+                  title: Text("أُصَلِّى فَرْضَ العَصْرِأَرْبَعَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى \n"
+                      "\nUsholli fardhol ashri arba'a roka'aati mustaqbilal qiblati adaa an (sholat sendiri)/Ma'muuman (menjadi ma'mum)/Imaaman (menjadi imam) Lillaahi Ta'ala.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -63,7 +65,8 @@ final bool _customIcon = false;
             ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Magrib',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
-                  title: Text("Usholli fardhol magribi tsalasa rok'aati mustaqbilal qiblati adaa an (sholat sendiri)/Ma'muuman (menjadi ma'mum)/Imaaman (menjadi imam) Lillaahi Ta'ala."),
+                  title: Text("أُصَلِّى فَرْضَ المَغْرِبِ ثَلاَثَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَ \n"
+                      "\nUsholli fardhol magribi tsalasa rok'aati mustaqbilal qiblati adaa an (sholat sendiri)/Ma'muuman (menjadi ma'mum)/Imaaman (menjadi imam) Lillaahi Ta'ala.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -74,7 +77,8 @@ final bool _customIcon = false;
             ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Isya',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
-                  title: Text("Usholli fardhol 'Isya i arba'a roka'aati mustaqbilal qiblati adaa an (sholat sendiri)/Ma'muuman (menjadi ma'mum)/Imaaman (menjadi imam) Lillaahi Ta'aalaa."),
+                  title: Text("أُصَلِّى فَرْضَ العِشَاء ِأَرْبَعَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى \n"
+                      "\nUsholli fardhol 'Isya i arba'a roka'aati mustaqbilal qiblati adaa an (sholat sendiri)/Ma'muuman (menjadi ma'mum)/Imaaman (menjadi imam) Lillaahi Ta'aalaa.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
