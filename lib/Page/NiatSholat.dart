@@ -31,7 +31,8 @@ final bool _customIcon = false;
             ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Shubuh',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
-                  title: Text("Usholli fardhossubhi rok'ataini mustaqbilal-qiblati adaa-an (ma'muman/imaman) lillahi ta'ala"),
+                  title: Text("أُصَلِّى فَرْضَ الصُّبْح رَكَعتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى \n"
+                      "\nUsholli fardhossubhi rok'ataini mustaqbilal-qiblati adaa-an (ma'muman/imaman) lillahi ta'ala\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},

@@ -31,7 +31,7 @@ class bacaansholat extends StatelessWidget{
               children: <Widget>[
                 ListTile(
                   title: Text("اَللهُ اَكْبَرُ كَبِيْرًا وَالْحَمْدُ لِلّهِ كَثِيْرًا وَسُبْحَانَ اللهِ بُكْرَةً وَاَصِيْلًا. اِنِّى وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَالسَّمَاوَاتِ وَالْاَرْضَ حَنِيْفًا مُسْلِمًا وَمَا اَنَا مِنَ الْمُشْرِكِيْنَ. اِنَّ صَلَاتِيْ وَنُسُكِيْ وَمَحْيَايَ وَمَمَاتِيْ لِلّهِ رَبِّ الْعَا لَمِيْنَ. لاَ شَرِيْكَ لَهُ وَبِذَلِكَ اُمِرْتُ وَاَنَا مِنَ الْمُسْلِمِيْنَ\n"
-                      "Bacaan latin: Allahu akbar kabiiraa wal hamdu lillahi katsiiraa washub-haanallahi bukratan wa ashiilaa. Inni wajjahtu wajhiya lilladzii fatharassa maawaati wal ardla haniifan musliman wamaa anaa minal musyrikiina. Inna shalaatii wanusukii wamahyaaya wama maati lillahi rabbil aalamiina. Laasyriika lahu wabidzaalika umirtu wa anaa minal muslimin."),
+                      "\nAllahu akbar kabiiraa wal hamdu lillahi katsiiraa washub-haanallahi bukratan wa ashiilaa. Inni wajjahtu wajhiya lilladzii fatharassa maawaati wal ardla haniifan musliman wamaa anaa minal musyrikiina. Inna shalaatii wanusukii wamahyaaya wama maati lillahi rabbil aalamiina. Laasyriika lahu wabidzaalika umirtu wa anaa minal muslimin.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -45,7 +45,7 @@ class bacaansholat extends StatelessWidget{
               children: <Widget>[
                 ListTile(
                   title: Text("بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْمِ . الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ . الرَّحْمَٰنِ الرَّحِيم . مَالِكِ يَوْمِ الدِّينِ . إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ . اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ . صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ\n"
-                      "Bacaan latin: Bismillahirrahmaanirrahiim. Alhamdu lillahi rabbil 'aalamiin. Arrahmaanirrahiim. Maaliki yaumiddiin. Iyyaaka na'budu waiyyaaka nasta'iin. Ihdinash shirraathal musthaqiim. Shiraathal ladziina an'amta 'alaihim. Ghairil maghduubi 'alaihim waladl-dlaalliin."),
+                      "\nBismillahirrahmaanirrahiim. Alhamdu lillahi rabbil 'aalamiin. Arrahmaanirrahiim. Maaliki yaumiddiin. Iyyaaka na'budu waiyyaaka nasta'iin. Ihdinash shirraathal musthaqiim. Shiraathal ladziina an'amta 'alaihim. Ghairil maghduubi 'alaihim waladl-dlaalliin.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -72,7 +72,7 @@ class bacaansholat extends StatelessWidget{
               children: <Widget>[
                 ListTile(
                   title: Text("سُبْحَانَ رَبِّىَ الْعَظِيمِ وَبِحَمْدِهِ\n"
-                      "Bacaan latin: Subhaana rabbiyal 'adzhiimi wabihamdihi (3 kali)"),
+                      "\nSubhaana rabbiyal 'adzhiimi wabihamdihi (3x)\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -85,10 +85,12 @@ class bacaansholat extends StatelessWidget{
             ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), title: Text("Bacaan I'tidal",style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
-                  title: Text(" سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ\nُ"
-                      "\nBacaan latin: Sami'allaahu liman hamidah\n"
-                      " رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَالأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ\n"
-                      "Bacaan latin: Rabbanaa lakal hamdu mil ussamawaati wamil ul ardli wamil u maa syi'ta min syai'in ba'du."
+                  title: Text(" سَمِعَ اللَّهُ لِمَنْ حَمِدَهُُ\n"
+                      "\nSami'allaahu liman hamidah\n"
+
+                      "\nرَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَالأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ\n"
+
+                      "\nRabbanaa lakal hamdu mil ussamawaati wamil ul ardli wamil u maa syi'ta min syai'in ba'du.\n"
                   ),
                 ),
               ],
@@ -102,8 +104,8 @@ class bacaansholat extends StatelessWidget{
             ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), title: Text('Bacaan Sujud',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
-                  title: Text(" سُبْحَانَ رَبِّىَ الْأَعْلَى وَبِحَمْدِهِ\nِ"
-                      "Bacaan latin: Subhaana rabbiyal a'laa wabihamdihi (3 kali)"),
+                  title: Text(" سُبْحَانَ رَبِّىَ الْأَعْلَى وَبِحَمْدِهِ\n"
+                      "\nSubhaana rabbiyal a'laa wabihamdihi (3x)\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -117,7 +119,7 @@ class bacaansholat extends StatelessWidget{
               children: <Widget>[
                 ListTile(
                   title: Text(" رب اغْفِرلي وَارْحَمْنِى واجبرني وَارْفَعْنِي وَارْزُقْنِى وَاهْدِنِى وَعَافِنِى وَاعْفُ عَنِّى\n"
-                      "Bacaan latin: Robbighfirlii warhamnii wajburnii warfa'nii warzuqnii wahdinii wa'aafinii wa'fuannii."
+                      "\nRobbighfirlii warhamnii wajburnii warfa'nii warzuqnii wahdinii wa'aafinii wa'fuannii.\n"
                   ),
                 ),
               ],
@@ -132,7 +134,7 @@ class bacaansholat extends StatelessWidget{
               children: <Widget>[
                 ListTile(
                   title: Text(" سُبْحَانَ رَبِّىَ الْأَعْلَى وَبِحَمْدِهِ\n"
-                      "Bacaan latin: Subhaana rabbiyal a'laa wabihamdihi (3 kali)"),
+                      "\nSubhaana rabbiyal a'laa wabihamdihi (3x)\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -146,7 +148,7 @@ class bacaansholat extends StatelessWidget{
               children: <Widget>[
                 ListTile(
                   title: Text("التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِىُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِاَ . للَّهُمَّ صَلِّ عَلىَسَـيَّدِنَا مُحَمَّدٍ\n"
-                      "Bacaan latin: Attahiyyaatul mubaarakaatush sholawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullahi wabarakaatuh. Assalaaamu'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallah wa asyhadu anna Muhammadar rasuulullah. Allahumma shalli 'alaa sayyidinaa Muhammad."),
+                      "\nAttahiyyaatul mubaarakaatush sholawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullahi wabarakaatuh. Assalaaamu'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallah wa asyhadu anna Muhammadar rasuulullah. Allahumma shalli 'alaa sayyidinaa Muhammad.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
@@ -159,7 +161,8 @@ class bacaansholat extends StatelessWidget{
             ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), title: Text('Bacaan Tasyahud/Tahiyat Akhir',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
-                  title: Text("\n "),
+                  title: Text("التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِىُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ وَعَلَى آلِ سَيِّدِنَامُحَمَّدٍمُحَمَّدًا رَسُولُ اللَّهِاَ . للَّهُمَّ صَلِّ عَلىَسَـيَّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمِ وَعَلَى اَلِ سَيِّدِنَا إِبْرَاهِيْمِ. وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اَلِ سَيِّدِنَا مُحَمَّدٍ كََمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمِ وَعَلَى اَلِ سَيِّدِنَا إِبْرَاهِيْمِ فِى الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَجِيْدٌ\n"
+                  "\nAttahiyyaatul mubaarakaatush sholawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullahi wabarakaatuh. Assalaaamu'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallah wa asyhadu anna Muhammadar rasuulullah. Allahumma shalli 'alaa sayyidinaa Muhammad. Kamaa shallaita 'alaa sayyidina Ibraahima wa 'alaa aali sayiidinaa Ibraahimm wabaarik 'alaa sayyidina Muhammad wa'alaa aali sayyidina muhammad. Kamaa baarakta 'alaa sayyidinaa Ibraahim fil'aala miina innaka hamiidun majiid.\n"),
                 ),
               ],
               onExpansionChanged: (bool expanded){},
