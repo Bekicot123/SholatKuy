@@ -4,8 +4,7 @@ import 'package:sholatkuy/Page/NiatSholat.dart';
 import 'package:sholatkuy/Page/TuntunanSholat.dart';
 
 void main(){
-  runApp(const MyApp());
-
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget{

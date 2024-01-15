@@ -3,23 +3,25 @@ import 'package:flutter_qiblah/flutter_qiblah.dart';
 import 'package:sholatkuy/Component/qiblah_compass.dart';
 
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+class Kiblat extends StatefulWidget {
+  const Kiblat({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyAppState extends State<Kiblat> {
   final _deviceSupport = FlutterQiblah.androidDeviceSensorSupport();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(hexColor("#334E85")),
         body: FutureBuilder(
+
           future: _deviceSupport,
           builder: (_, AsyncSnapshot<bool?> snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
