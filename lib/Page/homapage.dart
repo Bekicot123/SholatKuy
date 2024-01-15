@@ -39,20 +39,19 @@ class _MyClockWidgetState extends State<MyClockWidget> {
             children: [
               Card(
                 margin: const EdgeInsets.all(0),
-                elevation: 2,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0),
                 ),
                 child: Container(
                   width: 1100, // Tentukan lebar sesuai kebutuhan
-                  height: 200,
+                  height: 225,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage('lib/Image/masjid.png'),
                       // Ganti dengan path gambar Anda
                       fit: BoxFit.cover, // Sesuaikan dengan kebutuhan Anda
                     ),
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.circular(0),
                   ),
                   child: InkWell(
                     child: Column(
@@ -80,16 +79,14 @@ class _MyClockWidgetState extends State<MyClockWidget> {
                               )),
                         ),
                         SizedBox(
-                          height: 35,
+                          height: 40,
                         ),
                       ],
                     ),
                   ),
                 ),
               ),
-              SizedBox(
-                height: 5,
-              ),
+              SizedBox(height: 10,),
               Card(
                 margin: const EdgeInsets.all(0),
                 elevation: 2,
@@ -98,7 +95,7 @@ class _MyClockWidgetState extends State<MyClockWidget> {
                 ),
                 child: Container(
                   width: 1100,
-                  height: 100,
+                  height: 80,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     color: Color(hexColor('#334E85')),
@@ -112,26 +109,29 @@ class _MyClockWidgetState extends State<MyClockWidget> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.max,
-                          children: <Widget>[
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "3.40",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              height: 5,
-                            ),
-                            Text(
-                              "Subuh",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold),
-                            ),
-                          ],
+                        child: SizedBox(
+                          height: 50,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                "3.40",
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                "Subuh",
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Card(
