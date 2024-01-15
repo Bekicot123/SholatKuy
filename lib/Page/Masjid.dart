@@ -1,37 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:latlong2/latlong.dart';
+import 'package:flutter_map/flutter_map.dart';
 
-class Masjid extends StatelessWidget{
-  const Masjid ({super.key});
+class Masjid extends StatelessWidget {
+  const Masjid({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: Column(
-        children: [
-          Image.asset("lib/Image/latar.png"),
-          SizedBox(
-            height: 16,
-          ),
-          Text(
-            "Checklist Sholat",textAlign: TextAlign.left,
-            style: TextStyle( fontSize: 20, color: Colors.blue),
-          ),
-          SizedBox(
-            height: 16,
-          ),
-          Card(
-            margin: const EdgeInsets.only(top:8,bottom: 20,left:8,right:8),
-            clipBehavior: Clip.antiAlias,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(14),
-            ),
-            child: Row(children: <Widget>[
-              SizedBox()
-            ],),
-          )
-        ],
+    return FlutterMap(
+      options: MapOptions(
+        initialCenter: LatLng(-7.966030, 112.607761),
+        initialZoom: 9.2,
       ),
+      children: [
+        TileLayer(
+          urlTemplate:
+              'https://api.mapbox.com/styles/v1/kazu23/clrf1shxy00e301pedgi87keg/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia2F6dTIzIiwiYSI6ImNreGdoMmRnMTF5NjgydnFxMHFveGJlczcifQ.ws4l-Lhj5YBo7bSYOAFVGQ',
+          additionalOptions: {
+            'accessToken':
+                'pk.eyJ1Ijoia2F6dTIzIiwiYSI6ImNreGdoMmRnMTF5NjgydnFxMHFveGJlczcifQ.ws4l-Lhj5YBo7bSYOAFVGQ',
+            'id': 'mapbox.satellite'
+          },
+        ),
+        // RichAttributionWidget(
+        //   attributions: [
+        //     TextSourceAttribution(
+        //       'OpenStreetMap contributors',
+        //       onTap: () =>
+        //           launchUrl(Uri.parse('https://openstreetmap.org/copyright')),
+        //     ),
+        //   ],
+        // ),
+      ],
     );
   }
 }
