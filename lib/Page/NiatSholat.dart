@@ -28,7 +28,7 @@ final bool _customIcon = false;
             ),
             SizedBox(width: 20,height: 10,
             ),
-            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Shubuh',style: TextStyle(color: Color(hexColor("#334E85"))),),
+            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.black, width: 2)),title: Text('Bacaan Niat Sholat Shubuh',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
                   title: Text("أُصَلِّى فَرْضَ الصُّبْح رَكَعتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى \n"
@@ -36,11 +36,11 @@ final bool _customIcon = false;
                 ),
               ],
               onExpansionChanged: (bool expanded){},
-              collapsedShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+              collapsedShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),
             ),
             SizedBox(width: 20,height: 10,
             ),
-            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Dzuhur',style: TextStyle(color: Color(hexColor("#334E85"))),),
+            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),title: Text('Bacaan Niat Sholat Dzuhur',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
                   title: Text("اُصَلِّيْ فَرْضَ الظُّهْرِ أَرْبَعَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى\n "
@@ -48,10 +48,11 @@ final bool _customIcon = false;
                 ),
               ],
               onExpansionChanged: (bool expanded){},
+              collapsedShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),
             ),
             SizedBox(width: 20,height: 10,
             ),
-            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Ashar',style: TextStyle(color: Color(hexColor("#334E85"))),),
+            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),title: Text('Bacaan Niat Sholat Ashar',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
                   title: Text("أُصَلِّى فَرْضَ العَصْرِأَرْبَعَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى \n"
@@ -59,10 +60,11 @@ final bool _customIcon = false;
                 ),
               ],
               onExpansionChanged: (bool expanded){},
+              collapsedShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),
             ),
             SizedBox(width: 20,height: 10,
             ),
-            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Magrib',style: TextStyle(color: Color(hexColor("#334E85"))),),
+            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),title: Text('Bacaan Niat Sholat Magrib',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
                   title: Text("أُصَلِّى فَرْضَ المَغْرِبِ ثَلاَثَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَ \n"
@@ -70,11 +72,12 @@ final bool _customIcon = false;
                 ),
               ],
               onExpansionChanged: (bool expanded){},
+              collapsedShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),
               
             ),
             SizedBox(width: 20,height: 10,
             ),
-            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),title: Text('Bacaan Niat Sholat Isya',style: TextStyle(color: Color(hexColor("#334E85"))),),
+            ExpansionTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),title: Text('Bacaan Niat Sholat Isya',style: TextStyle(color: Color(hexColor("#334E85"))),),
               children: <Widget>[
                 ListTile(
                   title: Text("أُصَلِّى فَرْضَ العِشَاء ِأَرْبَعَ رَكَعاَتٍ مُسْتَقْبِلَ الْقِبْلَةِ أَدَاءً لله تَعَالَى \n"
@@ -82,6 +85,7 @@ final bool _customIcon = false;
                 ),
               ],
               onExpansionChanged: (bool expanded){},
+              collapsedShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side:BorderSide(color: Colors.black, width: 2)),
             ),
           ],
         ),

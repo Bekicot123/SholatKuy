@@ -21,7 +21,6 @@ class _MyAppState extends State<Kiblat> {
       home: Scaffold(
         backgroundColor: Color(hexColor("#334E85")),
         body: FutureBuilder(
-
           future: _deviceSupport,
           builder: (_, AsyncSnapshot<bool?> snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
