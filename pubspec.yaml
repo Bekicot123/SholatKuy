@@ -73,6 +73,8 @@ flutter:
     - lib/Image/
     - lib/Image/
     - lib/Image/
+    - lib/Image/
+    - lib/Image/
     - lib/assets/compass.svg
     - lib/assets/needle.svg
 

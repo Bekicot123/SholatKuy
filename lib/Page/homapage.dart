@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:sholatkuy/Page/profile.dart';
 import 'Kiblat.dart';
 import 'Masjid.dart';
 import 'TuntunanSholat.dart';
@@ -25,7 +26,7 @@ class _MyClockWidgetState extends State<MyClockWidget> {
     Timer.periodic(Duration(seconds: 1), (timer) {
       setState(() {
         currentDate = DateFormat.yMMMMd().format(DateTime.now());
-        currentTime = DateFormat.Hm().format(DateTime.now());
+        currentTime = DateFormat.Hms().format(DateTime.now());
       });
     });
   }
@@ -59,19 +60,36 @@ class _MyClockWidgetState extends State<MyClockWidget> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
+                        Padding(padding: EdgeInsets.only(left: 1),
+                        child: Card(
+                          margin: EdgeInsets.all(12),
+                          child: InkWell(
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => profile()));
+                            },
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Image.asset("lib/Image/people.png",
+                                width: 30,
+                                height: 30,),
+                              ],
+                            ),
+                          ),
+                        )),
                         SizedBox(
-                          height: 88,
+                          height: 30,
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 15),
                           child: Text(
                             DateFormat.yMMMMd().format(DateTime.now()),
-                            style: TextStyle(fontSize: 15, color: Colors.white),
+                            style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 15),
-                          child: Text(DateFormat.Hm().format(DateTime.now()),
+                          child: Text(DateFormat.Hms().format(DateTime.now()),
                               style: TextStyle(
                                 fontSize: 50,
                                 color: Colors.white,
@@ -95,7 +113,7 @@ class _MyClockWidgetState extends State<MyClockWidget> {
                 ),
                 child: Container(
                   width: 1100,
-                  height: 80,
+                  height: 73,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     color: Color(hexColor('#334E85')),
